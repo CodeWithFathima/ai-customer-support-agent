@@ -1,0 +1,9 @@
+Smartwatch Manual
+
+To turn on the smartwatch, hold the power button for 3 seconds.
+
+To restore factory settings, go to Settings → System → Reset.
+
+Charge the device using the supplied magnetic charger.
+
+The battery lasts approximately 10 hours under normal usage.

@@ -1,0 +1,13 @@
+Frequently Asked Questions
+
+Q: How do I reset my password?
+
+A: Click "Forgot Password" on the login page.
+
+Q: Can I cancel my order?
+
+A: Orders can be cancelled before they are shipped.
+
+Q: How can I contact support?
+
+A: Email support@technova.com
