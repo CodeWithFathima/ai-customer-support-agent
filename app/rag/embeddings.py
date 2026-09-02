@@ -1,3 +1,4 @@
+from app.rag.chunker import read_document,split_into_sentences,create_chunks
 from sentence_transformers import SentenceTransformer
 model = SentenceTransformer("all-MiniLM-L6-v2")
 def create_embeddings(chunks):
@@ -5,10 +6,9 @@ def create_embeddings(chunks):
     return embeddings
 
 if __name__ == "__main__":
-    chunks = [
-       " Products can be returned within 30 days.",
-        "Refunds are processed within 5 business days ."
-    ]
+    text = read_document("documents/refund_policy.txt")
+    sentences = split_into_sentences(text)
+    chunks = create_chunks(sentences, chunk_size=3, overlap=1)
     embeddings = create_embeddings(chunks)
-    print(type(embeddings))
-    print(embeddings.shape)
+    print("Number of chunks:",len(chunks))
+    print("Embedding Shape:",embeddings.shape)
